@@ -3,47 +3,295 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduMentor</title>
+
+<title>Ruang Cerdas - Platform Pembelajaran Online</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    font-family:Arial,sans-serif;
-    margin:0;
-    background:#f5f5f5;
-    text-align:center;
+background:#f8fafc;
+color:#1e293b;
 }
-header{
-    background:#111;
-    color:white;
-    padding:60px 20px;
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,.95);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
-h1{
-    margin:0;
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
 }
-.container{
-    padding:40px;
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
 }
+
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#0f172a,#2563eb);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
 .btn{
-    display:inline-block;
-    background:#111;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:5px;
+display:inline-block;
+background:white;
+color:#2563eb;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stat h2{
+color:#2563eb;
+font-size:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
 </head>
+
 <body>
 
-<header>
-    <h1>EduMentor</h1>
-    <p>Platform Bimbingan Akademik Online</p>
-</header>
+<nav>
+<div class="logo">Ruang Cerdas</div>
 
-<div class="container">
-    <h2>Selamat Datang</h2>
-    <p>Kami membantu mahasiswa dan pelajar dalam tugas, laporan, presentasi, dan konsultasi akademik.</p>
-    <a class="btn" href="#">Hubungi Kami</a>
+<div>
+<a href="#layanan">Layanan</a>
+<a href="#keunggulan">Keunggulan</a>
+<a href="#testimoni">Testimoni</a>
+<a href="#kontak">Kontak</a>
 </div>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Belajar Lebih Mudah</h1>
+
+<p>
+Platform pembelajaran online modern untuk membantu siswa dan mahasiswa berkembang.
+</p>
+
+<a href="#layanan" class="btn">
+Mulai Sekarang
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Statistik Kami</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>1000+</h2>
+<p>Siswa Terbantu</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Mentor</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Dukungan</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="layanan">
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Konsultasi Akademik</h3>
+<p>Pendampingan belajar dan diskusi materi.</p>
+</div>
+
+<div class="card">
+<h3>Persiapan Ujian</h3>
+<p>Belajar lebih efektif untuk menghadapi ujian.</p>
+</div>
+
+<div class="card">
+<h3>Materi Pembelajaran</h3>
+<p>Materi terstruktur dan mudah dipahami.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="keunggulan">
+
+<h2 class="title">Mengapa Memilih Kami?</h2>
+
+<div class="cards">
+
+<div class="card">✅ Mentor Berpengalaman</div>
+<div class="card">✅ Fleksibel Online</div>
+<div class="card">✅ Respons Cepat</div>
+<div class="card">✅ Materi Berkualitas</div>
+
+</div>
+
+</section>
+
+<section id="testimoni">
+
+<h2 class="title">Testimoni</h2>
+
+<div class="cards">
+
+<div class="testimonial">
+<p>"Sangat membantu memahami materi yang sulit."</p>
+<br>
+<strong>- Andi</strong>
+</div>
+
+<div class="testimonial">
+<p>"Mentornya ramah dan penjelasannya mudah dipahami."</p>
+<br>
+<strong>- Sarah</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2 class="title">Hubungi Kami</h2>
+
+<div class="card">
+
+<p>Email: info@ruangcerdas.com</p>
+<br>
+<p>WhatsApp: +6282364947654</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Ruang Cerdas</h3>
+
+<p>Belajar Lebih Mudah, Raih Prestasi Lebih Tinggi</p>
+
+</footer>
+
+<a href="#" class="whatsapp">
+WhatsApp
+</a>
 
 </body>
 </html>
