@@ -1,164 +1,29 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruang Cerdas - Belajar Lebih Mudah</title>
 
-<title>Ruang Cerdas - Platform Pembelajaran Online</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f8fafc;
-color:#1e293b;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(15,23,42,.95);
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-}
-
-.logo{
-color:white;
-font-size:24px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(135deg,#0f172a,#2563eb);
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-background:white;
-color:#2563eb;
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-
-section{
-padding:80px 8%;
-}
-
-.title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.stat{
-background:white;
-padding:30px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.stat h2{
-color:#2563eb;
-font-size:40px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.testimonial{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
+<div class="container">
+
 <div class="logo">Ruang Cerdas</div>
 
-<div>
-<a href="#layanan">Layanan</a>
-<a href="#keunggulan">Keunggulan</a>
-<a href="#testimoni">Testimoni</a>
-<a href="#kontak">Kontak</a>
+<ul>
+<li><a href="#kelas">Kelas</a></li>
+<li><a href="#mentor">Mentor</a></li>
+<li><a href="#testimoni">Testimoni</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
 </div>
 </nav>
 
@@ -166,14 +31,14 @@ font-weight:bold;
 
 <div>
 
-<h1>Belajar Lebih Mudah</h1>
+<h1>Belajar Lebih Mudah Bersama Ruang Cerdas</h1>
 
 <p>
-Platform pembelajaran online modern untuk membantu siswa dan mahasiswa berkembang.
+Platform pembelajaran online modern untuk siswa Indonesia.
 </p>
 
-<a href="#layanan" class="btn">
-Mulai Sekarang
+<a href="#kelas" class="btn">
+Mulai Belajar
 </a>
 
 </div>
@@ -182,64 +47,86 @@ Mulai Sekarang
 
 <section>
 
+<div class="container">
+
 <h2 class="title">Statistik Kami</h2>
 
-<div class="stats">
+<div class="grid">
 
-<div class="stat">
-<h2>1000+</h2>
-<p>Siswa Terbantu</p>
+<div class="card">
+<h2>5.000+</h2>
+<p>Siswa Aktif</p>
 </div>
 
-<div class="stat">
-<h2>50+</h2>
-<p>Mentor</p>
+<div class="card">
+<h2>100+</h2>
+<p>Mentor Profesional</p>
 </div>
 
-<div class="stat">
-<h2>24/7</h2>
-<p>Dukungan</p>
+<div class="card">
+<h2>250+</h2>
+<p>Kelas Online</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="layanan">
+<section id="kelas">
 
-<h2 class="title">Layanan Kami</h2>
+<div class="container">
 
-<div class="cards">
+<h2 class="title">Kelas Populer</h2>
+
+<div class="grid">
 
 <div class="card">
-<h3>Konsultasi Akademik</h3>
-<p>Pendampingan belajar dan diskusi materi.</p>
+<h3>Matematika</h3>
+<p>Kuasai konsep dasar hingga lanjutan.</p>
 </div>
 
 <div class="card">
-<h3>Persiapan Ujian</h3>
-<p>Belajar lebih efektif untuk menghadapi ujian.</p>
+<h3>Bahasa Inggris</h3>
+<p>Belajar grammar, speaking dan listening.</p>
 </div>
 
 <div class="card">
-<h3>Materi Pembelajaran</h3>
-<p>Materi terstruktur dan mudah dipahami.</p>
+<h3>Pemrograman</h3>
+<p>HTML, CSS, JavaScript dan Web Development.</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="keunggulan">
+<section id="mentor">
 
-<h2 class="title">Mengapa Memilih Kami?</h2>
+<div class="container">
 
-<div class="cards">
+<h2 class="title">Mentor Kami</h2>
 
-<div class="card">✅ Mentor Berpengalaman</div>
-<div class="card">✅ Fleksibel Online</div>
-<div class="card">✅ Respons Cepat</div>
-<div class="card">✅ Materi Berkualitas</div>
+<div class="grid">
+
+<div class="card">
+<h3>Budi Santoso</h3>
+<p>Mentor Matematika</p>
+</div>
+
+<div class="card">
+<h3>Siti Rahma</h3>
+<p>Mentor Bahasa Inggris</p>
+</div>
+
+<div class="card">
+<h3>Andi Pratama</h3>
+<p>Mentor Teknologi Informasi</p>
+</div>
+
+</div>
 
 </div>
 
@@ -247,35 +134,54 @@ Mulai Sekarang
 
 <section id="testimoni">
 
+<div class="container">
+
 <h2 class="title">Testimoni</h2>
 
-<div class="cards">
+<div class="grid">
 
-<div class="testimonial">
-<p>"Sangat membantu memahami materi yang sulit."</p>
-<br>
-<strong>- Andi</strong>
+<div class="card">
+<p>"Materinya mudah dipahami dan sangat membantu."</p>
 </div>
 
-<div class="testimonial">
-<p>"Mentornya ramah dan penjelasannya mudah dipahami."</p>
-<br>
-<strong>- Sarah</strong>
+<div class="card">
+<p>"Mentornya ramah dan profesional."</p>
+</div>
+
+<div class="card">
+<p>"Belajar jadi lebih menyenangkan."</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="kontak">
+<section id="faq">
 
-<h2 class="title">Hubungi Kami</h2>
+<div class="container">
+
+<h2 class="title">FAQ</h2>
+
+<div class="grid">
 
 <div class="card">
+<h3>Apakah bisa belajar online?</h3>
+<p>Ya, seluruh kelas tersedia secara online.</p>
+</div>
 
-<p>Email: info@ruangcerdas.com</p>
-<br>
-<p>WhatsApp: +6282364947654</p>
+<div class="card">
+<h3>Apakah ada sertifikat?</h3>
+<p>Tersedia untuk kelas tertentu.</p>
+</div>
+
+<div class="card">
+<h3>Bagaimana cara mendaftar?</h3>
+<p>Melalui halaman login dan registrasi.</p>
+</div>
+
+</div>
 
 </div>
 
@@ -289,9 +195,6 @@ Mulai Sekarang
 
 </footer>
 
-<a href="#" class="whatsapp">
-WhatsApp
-</a>
-
 </body>
 </html>
+```
